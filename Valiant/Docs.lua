@@ -1,4 +1,4 @@
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/cypherdh/VanisUILIB/main/.gitignore"))()
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ForexCODERR/UI-Libraries/main/Valiant/source.lua"))()
 local Window = Library:CreateWindow(<string>, Title, <string>, Version, <string>, IconID)
 local Tab = Window:CreateTab(<string> Title)
 local Page = Tab:CreateFrame(<string> Title)
