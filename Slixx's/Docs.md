@@ -1,7 +1,7 @@
 # Basic Documents
 First, we start by calling the **Library**.
 ```lua
-local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/insanedude59/UILib/main/source"))();
+local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/ForexCODERR/UI-Libraries/main/Slixx's/source.lua"))();
 ```
 Next, set the **title**.
 ```lua
