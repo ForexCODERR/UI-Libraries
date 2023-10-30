@@ -94,14 +94,6 @@ RunService.Stepped:Connect(function(Time, DeltaTime)
         local ballMagnitude = ballVelocity.Magnitude
         local ballVolume = ballVelocity.X + ballVelocity.Y + ballVelocity.Z
         local timeToImpact = distance / ballMagnitude
-
-        local ball2 = workspace.Balls:FindFirstChildWhichIsA("BasePart")
-        local hum = game.Players.LocalPlayer.Character
-        local balldist = 10
-    
-        if ball2 and (ball2.Position - hum.HumanoidRootPart.Position).Magnitude <= balldist and hum:FindFirstChild("Highlight") then
-          timeToImpact = 10
-      end
   
         if Visual then
           HitboxPart.Position = Player.Character.HumanoidRootPart.Position
@@ -118,7 +110,7 @@ RunService.Stepped:Connect(function(Time, DeltaTime)
   
         if ball:GetAttribute('target') == (Player.Name or Player.DisplayName) and not ParryCD then
           if Parry then
-            if timeToImpact <= 0.5 then
+            if timeToImpact <= 0.62 then
               Parry(ball)
             end
           end
